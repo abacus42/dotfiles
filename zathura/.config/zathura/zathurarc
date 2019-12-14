@@ -1,0 +1,6 @@
+set adjust-open "width"
+set page-padding 2
+set window-icon /usr/share/icons/breeze/mimetypes/64/application-pdf.svg
+set window-title-basename
+
+set font "Sans Regular 12"
