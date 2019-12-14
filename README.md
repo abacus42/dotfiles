@@ -8,7 +8,7 @@ It is heavily based on the [dotfiles by woefe](https://github.com/woefe/dotfiles
 1. Clone this repo:
 
     ```shell
-    git clone --recursive https://bitbucket.org/abakus2000/dotfiles/src/master/
+    git clone --recursive https://github.com/abacus42/dotfiles.git $HOME/.dotfiles
     cd $HOME/.dotfiles
     ```
 
