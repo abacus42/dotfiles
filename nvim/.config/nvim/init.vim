@@ -1,6 +1,6 @@
 filetype off                  " required
 
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 Plug 'airblade/vim-gitgutter'
 Plug 'bling/vim-airline'
