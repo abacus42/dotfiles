@@ -126,7 +126,7 @@ set updatetime=250
 
 " enable undodir
 set undofile
-set undodir=~/.vim/undodir
+set undodir=~/.config/nvim/undodir
 
 " Warn when file changed on disk
 set autoread
