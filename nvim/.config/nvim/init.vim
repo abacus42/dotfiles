@@ -264,10 +264,15 @@ let g:neosnippet#snippets_directory='~/.config/nvim/snippets'
 call deoplete#custom#var('omni', 'input_patterns', {'tex': g:vimtex#re#deoplete})
 
 " repl.nvim
+" open repl
 nmap <leader>sh :vert Repl<CR>
 " Send the text of a motion to the REPL
-nmap <leader>rs  <Plug>(ReplSend)
+nmap <leader>rs  <Plug>(ReplSend)<ESC><C-w><C-p>
 " Send the current line to the REPL
-nmap <Space> <Plug>(ReplSendLine)
+nmap <Space> <Plug>(ReplSendLine)<ESC><C-w><C-p>
 " Send the selected text to the REPL
-vmap <Space> <Plug>(ReplSend)
+vmap <Space> <Plug>(ReplSend)<ESC><C-w><C-p>
+" Send the current line to the REPL and stay there
+nmap <C-Space> <Plug>(ReplSendLine)
+" Send the selected text to the REPL and stay there
+vmap <C-Space> <Plug>(ReplSend)
