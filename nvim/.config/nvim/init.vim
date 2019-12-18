@@ -259,6 +259,7 @@ smap <silent><CR> <Plug>(neosnippet_jump_or_expand)
 
 " load own snippets
 let g:neosnippet#snippets_directory='~/.config/nvim/snippets'
+let g:neosnippet#snippets_directory.=', ~/.config/nvim/plugged/CoCoA-Vim/snippets'
 
 "vimtex-complete-deoplete
 call deoplete#custom#var('omni', 'input_patterns', {'tex': g:vimtex#re#deoplete})
