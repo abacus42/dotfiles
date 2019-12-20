@@ -18,6 +18,7 @@ Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'abacus42/CoCoA-Vim'
 Plug 'https://gitlab.com/HiPhish/repl.nvim'
+Plug 'deoplete-plugins/deoplete-dictionary'
 
 " Colorschemes
 Plug 'rakr/vim-one'
