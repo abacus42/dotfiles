@@ -19,6 +19,7 @@ Plug 'Shougo/neosnippet-snippets'
 Plug 'abacus42/CoCoA-Vim'
 Plug 'https://gitlab.com/HiPhish/repl.nvim'
 Plug 'deoplete-plugins/deoplete-dictionary'
+Plug 'ludovicchabant/vim-gutentags'
 
 " Colorschemes
 Plug 'rakr/vim-one'
@@ -258,11 +259,14 @@ imap <expr><silent><CR> pumvisible() ? deoplete#close_popup() .
  \ "\<Plug>(neosnippet_jump_or_expand)" : "\<CR>"
 smap <silent><CR> <Plug>(neosnippet_jump_or_expand)
 
-" load own snippets
+" neosnippet: load own snippets
 let g:neosnippet#snippets_directory='~/.config/nvim/snippets'
 
 "vimtex-complete-deoplete
 call deoplete#custom#var('omni', 'input_patterns', {'tex': g:vimtex#re#deoplete})
+
+"gutentags
+let g:gutentags_cache_dir='~/.ctags/'
 
 " repl.nvim
 " open repl

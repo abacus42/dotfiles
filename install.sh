@@ -19,6 +19,7 @@ mkdir -p "$HOME/.config"
 #################################################################
 
 #stow               apcocoa
+#stow               ctags
 #stow --no-folding  nvim
 #stow               zathura
 #stow               zsh
