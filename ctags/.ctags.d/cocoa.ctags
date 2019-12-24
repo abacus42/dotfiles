@@ -1,3 +1,7 @@
 --langdef=cocoa
 --langmap=cocoa:.coc
+--langmap=cocoa:+.cpkg
+--langmap=cocoa:+.cpkg5
+--langmap=cocoa:+.cocoa
+--langmap=cocoa:+.cocoa5
 --regex-cocoa=/^define[ \t]*([a-zA-Z0-9_]+)/\1/f,function/
