@@ -13,12 +13,13 @@ Plug 'tomtom/tcomment_vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'machakann/vim-highlightedyank'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'deoplete-plugins/deoplete-dictionary'
+Plug 'deoplete-plugins/deoplete-jedi'
 let g:deoplete#enable_at_startup = 1
 Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'abacus42/CoCoA-Vim'
 Plug 'https://gitlab.com/HiPhish/repl.nvim'
-Plug 'deoplete-plugins/deoplete-dictionary'
 Plug 'ludovicchabant/vim-gutentags'
 
 " Colorschemes
