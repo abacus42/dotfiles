@@ -65,4 +65,5 @@ alias :q='exit'
 alias del='trash'
 alias vim='nvim'
 alias whoneeds='pacman -Qi'
+alias xelatex='xelatex --output-directory=build/'
 #}}}
