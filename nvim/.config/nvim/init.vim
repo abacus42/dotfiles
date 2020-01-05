@@ -184,6 +184,12 @@ map <F9> :setlocal spell! spelllang=en_us<CR>
 " change working directory to  directory of the current file
 nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
 
+" copy and paste to/from system clipboards
+noremap <Leader>y "+y
+noremap <Leader>p "+p
+noremap <Leader>Y "*y
+noremap <Leader>P "*p
+
 " neovim terminal mappings
 if has('nvim')
     tnoremap <Esc> <C-\><C-n>
