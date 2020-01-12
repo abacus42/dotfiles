@@ -281,9 +281,9 @@ nmap <leader>sh :vert Repl<CR><ESC><C-w><C-p>
 " Send the text of a motion to the REPL
 nmap <leader>rs <Plug>(ReplSend)
 " Send the current line to the REPL
-nmap <Space> <Plug>(ReplSendLine)<CR><ESC><C-w><C-p>
+nmap <Space> <Plug>(ReplSendLine)<ESC><C-w><C-p>
 " Send the selected text to the REPL
-vmap <Space> <Plug>(ReplSend)<CR><ESC><C-w><C-p>
+vmap <Space> <Plug>(ReplSend)<ESC><C-w><C-p>
 " Send the current line to the REPL and stay there
 nmap <C-Space> <Plug>(ReplSendLine)
 " Send the selected text to the REPL and stay there
