@@ -21,6 +21,7 @@ mkdir -p "$HOME/.config"
 #stow               apcocoa
 #stow               ctags
 #stow --no-folding  nvim
+#stow               scripts
 #stow               zathura
 #stow               zsh
 
