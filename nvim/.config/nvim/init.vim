@@ -8,7 +8,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'lervag/vimtex'
-Plug 'tpope/vim-fugitive'
 Plug 'tomtom/tcomment_vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'machakann/vim-highlightedyank'
@@ -28,11 +27,6 @@ Plug 'rakr/vim-one'
 " All of your Plugins must be added before the following line
 call plug#end()
 
-filetype plugin indent on
-
-" Enable syntax highlighting
-syntax on
-
 "------------------------------------------------------------
 " General settings
 "------------------------------------------------------------
@@ -40,17 +34,7 @@ syntax on
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.mp3,*.jpg,*.png,*.aux,*.pdf,*synctex.gz,*.fdb_latexmk
 
 " Better command-line completion
-set wildmenu
 set wildmode=longest:full,full
-
-" Show partial commands in the last line of the screen
-set showcmd
-
-" Highlight searches
-set hlsearch
-
-" highlight matching pattern as you type
-set incsearch
 
 " store swap files in a central place
 set directory=~/.vim/swapfiles//,/tmp//
@@ -71,19 +55,9 @@ set smartcase
 " Allow backspacing over autoindent, line breaks and start of insert action
 set backspace=indent,eol,start
 
-" Display the cursor position on the last line of the screen or in the status
-" line of a window
-set ruler
-
-" Always display the status line, even if only one window is displayed
-set laststatus=2
-
 " Instead of failing a command because of unsaved changes, instead raise a
 " dialogue asking if you wish to save changed files.
 set confirm
-
-" No visual bell or beeping
-set belloff=all
 
 " Display line numbers on the left
 set number
@@ -136,18 +110,13 @@ set autoread
 autocmd CursorHold * checktime
 
 " Indentation options
-set autoindent
 set smartindent
 set expandtab
 set shiftwidth=4
 set softtabstop=4
-set smarttab
 
-
-if has('nvim')
-    " live preview of substitution in split window
-    set inccommand=split
-endif
+" live preview of substitution in split window
+set inccommand=split
 
 "------------------------------------------------------------
 " Mappings
