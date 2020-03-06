@@ -143,6 +143,8 @@ set shiftwidth=4
 set softtabstop=4
 set smarttab
 
+" Activate mouse in all modes
+set mouse=a
 
 if has('nvim')
     " live preview of substitution in split window
