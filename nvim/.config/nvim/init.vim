@@ -114,6 +114,10 @@ set smartindent
 set expandtab
 set shiftwidth=4
 set softtabstop=4
+set smarttab
+
+" Activate mouse in all modes
+set mouse=a
 
 " live preview of substitution in split window
 set inccommand=split
