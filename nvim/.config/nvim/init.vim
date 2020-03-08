@@ -243,6 +243,10 @@ call deoplete#custom#var('omni', 'input_patterns', {'tex': g:vimtex#re#deoplete}
 
 "gutentags
 let g:gutentags_cache_dir='~/.ctags/'
+let g:gutentags_generate_on_write = 1
+
+"jump to tag definition
+nnoremap <leader>t <C-]>
 
 " repl.nvim
 " open repl
