@@ -131,14 +131,6 @@ let maplocalleader='ö'
 " Force saving files that require root permission
 cmap w!! w !sudo tee > /dev/null %
 
-" scroll by wrapped, rather than by actual lines
-imap <up> <C-O>gk
-imap <down> <C-O>gj
-nmap <up> gk
-nmap <down> gj
-vmap <up> gk
-vmap <down> gj
-
 " Set common command misspellings as aliases to make them work nonetheless
 cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
 cnoreabbrev <expr> Q ((getcmdtype() is# ':' && getcmdline() is# 'Q')?('q'):('Q'))
