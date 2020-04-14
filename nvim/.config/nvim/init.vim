@@ -139,7 +139,7 @@ cnoreabbrev <expr> Wq ((getcmdtype() is# ':' && getcmdline() is# 'Wq')?('wq'):('
 
 " Cycle through buffers
 nnoremap <Leader><TAB> :bnext<CR>
-nnoremap <Leader><S-TAB> :bprevious<CR>
+nnoremap <ä><TAB> :bprevious<CR>
 nnoremap <A-b> :b
 
 " toggle spellchecking
@@ -222,17 +222,19 @@ let g:vim_markdown_math = 1
 "           then expands_or_jumps
 "       else returns a normal TAB
 imap <expr><TAB> pumvisible() ? "\<C-n>" : neosnippet#expandable_or_jumpable() ?
- \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+  \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
  \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 
 " Expands or completes the selected snippet/item in the popup menu
 imap <expr><silent><CR> pumvisible() ? deoplete#close_popup() .
- \ "\<Plug>(neosnippet_jump_or_expand)" : "\<CR>"
-smap <silent><CR> <Plug>(neosnippet_jump_or_expand)
+ \ "\<Plug>(neosnippet_expand)" : "\<CR>"
+smap <silent><CR> <Plug>(neosnippet_expand)
 
 " neosnippet: load own snippets
 let g:neosnippet#snippets_directory='~/.config/nvim/snippets'
+" disable preview window in neosnippet candidates
+set completeopt-=preview
 
 "vimtex-complete-deoplete
 call deoplete#custom#var('omni', 'input_patterns', {'tex': g:vimtex#re#deoplete})
