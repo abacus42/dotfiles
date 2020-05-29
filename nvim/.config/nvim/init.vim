@@ -228,8 +228,8 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 
 " Expands or completes the selected snippet/item in the popup menu
 imap <expr><silent><CR> pumvisible() ? deoplete#close_popup() .
- \ "\<Plug>(neosnippet_expand)" : "\<CR>"
-smap <silent><CR> <Plug>(neosnippet_expand)
+ \ "\<Plug>(neosnippet_jump_or_expand)" : "\<CR>"
+smap <silent><CR> <Plug>(neosnippet_jump_or_expand)
 
 " neosnippet: load own snippets
 let g:neosnippet#snippets_directory='~/.config/nvim/snippets'
